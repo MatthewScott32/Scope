@@ -6,9 +6,27 @@
 //    console.log("Mmmmmmm... that's a good" + currentCookie);
 // }
 
-const conjunction = function (firstWord, secondWord) {
-    const conjoinedWord = `${firstWord} ${secondWord}`
-    console.log(conjoinedWord)
-}
+// const conjunction = function (firstWord, secondWord) {
+//     const conjoinedWord = `${firstWord} ${secondWord}`
+//     console.log(conjoinedWord)
+// }
 
-conjunction("Visa", "Card")
+// conjunction("Visa", "Card")
+
+
+{
+    const ModSquad = {
+        members: ["Pete Cochran", "Linc Hayes", "Julie Barnes", "Capt. Adam Greer", "Chief Barney Metcalf"],
+        series: {
+            start: "1968",
+            end: "1973"
+        }
+    }
+
+    const HTMLRepresentation = `<h1>The Mod Squad</h1>`
+
+    ModSquad.members.forEach(member => {
+        let htmlRepresentation = `<div>${member}</div>`
+        document.querySelector(".show-info").innerHTML = htmlRepresentation
+    })
+}
